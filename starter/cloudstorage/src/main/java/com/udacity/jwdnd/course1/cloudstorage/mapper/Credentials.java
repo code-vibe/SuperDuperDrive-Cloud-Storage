@@ -2,9 +2,10 @@ package com.udacity.jwdnd.course1.cloudstorage.mapper;
 
 import org.apache.ibatis.annotations.*;
 
+@Mapper
 public interface Credentials {
     @Select("SELECT * FROM CREDENTIALS WHERE userid = #{UserId}")
-    Credentials[] getCredentials(String credentials);
+    Credentials[] getCredentials(Integer credentials);
 
     @Select("SELECT * FROM CREDENTIALS WHERE credentialsid = #{credentialsId}")
     Credentials getCredentialsById(Integer credentialsId);

@@ -6,7 +6,6 @@ public class Credentials {
     private String username;
     private String key;
     private String password;
-    private String foreignKey;
     private Integer userId;
 
     public Credentials(Integer credentialsId, String url, String username,
@@ -16,7 +15,6 @@ public class Credentials {
         this.username = username;
         this.key = key;
         this.password = password;
-        this.foreignKey = foreignKey;
         this.userId = userId;
     }
 
@@ -68,11 +66,5 @@ public class Credentials {
         this.userId = userId;
     }
 
-    public String getForeignKey() {
-        return foreignKey;
-    }
 
-    public void setForeignKey(String foreignKey) {
-        this.foreignKey = foreignKey;
-    }
 }

@@ -9,7 +9,7 @@ public class Credential {
     private Integer userId;
 
     public Credential(Integer credentialsId, String url, String username,
-                      String key, String password, String foreignKey, Integer userId ) {
+                      String key, String password, Integer userId ) {
         this.credentialsId = credentialsId;
         this.url = url;
         this.username = username;
